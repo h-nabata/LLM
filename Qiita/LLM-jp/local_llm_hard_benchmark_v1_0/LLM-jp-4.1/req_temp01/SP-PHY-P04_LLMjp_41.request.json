@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "A perfectly conducting sphere of radius $a$ is centered at the origin. A point charge $q$ is placed on the $z$-axis at $z=d$, where $d>a$. Let $\\varepsilon_0$ denote the vacuum permittivity.\n\nFirst consider the case in which the conducting sphere is grounded.\n\n(1) Using the method of images, determine the magnitude and position of the image charge that reproduces the electrostatic potential outside the sphere.\n\n(2) Determine the force acting on the point charge $q$. Also determine the total charge induced on the conducting sphere.\n\nNow consider the same conducting sphere when it is isolated rather than grounded, with total charge zero.\n\n(3) Determine the additional image charge required to represent the electric field outside the sphere while satisfying the neutrality condition. Also determine the electric potential of the conducting sphere.\n\n(4) Determine the force acting on the point charge $q$.\n\n(5) In the limit $d\\gg a$, obtain the leading asymptotic form of the force found in (4). Compare its dependence on $d$ with that for the grounded sphere."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

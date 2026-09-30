@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Answer the following problems.\n\n(1) Let $a$ be one of the vertices of a regular octahedron. At time $0$, an ant is at vertex $a$. Every second, the ant moves to one of the four vertices adjacent to its current vertex, choosing each with equal probability. For a nonnegative integer $t$, find, as a function of $t$, the probability that the ant is at vertex $a$ after $t$ seconds.\n\n(2) Let $a$ be one of the vertices of a regular icosahedron. At time $0$, an ant is at vertex $a$. Every second, the ant moves to one of the five vertices adjacent to its current vertex, choosing each with equal probability. For a nonnegative integer $t$, find, as a function of $t$, the probability that the ant is at vertex $a$ after $t$ seconds."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

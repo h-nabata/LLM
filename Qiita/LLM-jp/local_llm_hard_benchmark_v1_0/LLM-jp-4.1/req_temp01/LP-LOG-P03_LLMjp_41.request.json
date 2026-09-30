@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "A foundation selects research projects according to the following rules.\n\nMandatory Requirement I: The project must have passed ethics review.  \nMandatory Requirement II: The data management plan must have been approved.\n\nNormally, successful replication is also required.\n\nHowever, under the exploratory research track, only the successful-replication requirement may be waived, even if replication has not yet succeeded, provided that:\n- replication by an independent institution has already been scheduled,\n- the application explicitly states that the result has not yet been replicated, and\n- the project has passed an external audit.\n\nEven under the exploratory research track, Mandatory Requirements I and II cannot be waived.\n\nAmong eligible candidates, the scientific evaluation score has the highest priority.\nOnly when the scientific evaluation scores are tied is the lower-cost candidate preferred.\nIf there is still a tie, choose the candidate with the lexicographically earlier ID.\n\nThe candidates are as follows.\n\n| ID | Ethics | Data Plan | Replication Successful | Exploratory Track | Independent Replication Scheduled | Unreplicated Status Disclosed | External Audit | Score | Cost |\n|----|--------|-----------|------------------------|-------------------|-----------------------------------|----------------------------|----------------|-------|------|\n| P  | Yes    | Yes       | Yes                    | No                | —                                 | —                          | Yes            | 91    | 8    |\n| Q  | Yes    | Yes       | No                     | Yes               | Yes                               | Yes                        | Yes            | 94    | 12   |\n| R  | Yes    | Yes       | No                     | Yes               | Yes                               | No                         | Yes            | 97    | 5    |\n| S  | Yes    | No        | Yes                    | No                | —                                 | —                          | Yes            | 99    | 4    |\n| T  | Yes    | Yes       | No                     | Yes               | Yes                               | Yes                        | No             | 96    | 6    |\n| U  | Yes    | Yes       | Yes                    | No                | —                                 | —                          | Yes            | 94    | 7    |\n\nIn addition, the principal investigators of P and Q graduated from the same university, R has the longest application, S also applied last year, T's research topic is close to the area of expertise of one of the foundation's directors, and U has the youngest principal investigator. The rules above contain no special provisions regarding any of these facts.\n\nDetermine the list of eligible candidates and the selected candidate.\n\nOutput only a JSON object in the following format, with no explanation:\n\n{\"eligible\":[\"...\"],\"selected\":\"...\"}"
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

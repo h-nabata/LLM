@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "A reactant A can form two products through the following kinetic network:\n\n$$\n\\mathrm{A \\rightleftharpoons I}\n$$\n\nis a rapid pre-equilibrium, followed by\n\n$$\n\\mathrm{I \\rightarrow P}\n$$\n\nand a competing direct pathway\n\n$$\n\\mathrm{A \\rightarrow Q}.\n$$\n\nFor the pre-equilibrium $\\mathrm{A\\rightleftharpoons I}$,\n\n$$\n\\Delta H^\\circ_{\\mathrm{eq}}=20.00\\ \\mathrm{kJ\\,mol^{-1}},\n\\qquad\n\\Delta S^\\circ_{\\mathrm{eq}}=40.00\\ \\mathrm{J\\,mol^{-1}\\,K^{-1}}.\n$$\n\nFor $\\mathrm{I\\rightarrow P}$,\n\n$$\n\\Delta H_P^\\ddagger=45.00\\ \\mathrm{kJ\\,mol^{-1}},\n\\qquad\n\\Delta S_P^\\ddagger=-20.00\\ \\mathrm{J\\,mol^{-1}\\,K^{-1}},\n$$\n\nand for $\\mathrm{A\\rightarrow Q}$,\n\n$$\n\\Delta H_Q^\\ddagger=70.00\\ \\mathrm{kJ\\,mol^{-1}},\n\\qquad\n\\Delta S_Q^\\ddagger=30.00\\ \\mathrm{J\\,mol^{-1}\\,K^{-1}}.\n$$\n\nAssume the thermodynamic quantities above are temperature independent over the range of interest. Use the Eyring equation\n\n$$\nk(T)=\\frac{k_{\\mathrm B}T}{h}\n\\exp\\left(\\frac{\\Delta S^\\ddagger}{R}\\right)\n\\exp\\left(-\\frac{\\Delta H^\\ddagger}{RT}\\right),\n$$\n\nwith\n\n$$\nR=8.3144626\\ \\mathrm{J\\,mol^{-1}\\,K^{-1}},\n\\quad\nk_{\\mathrm B}=1.380649\\times10^{-23}\\ \\mathrm{J\\,K^{-1}},\n\\quad\nh=6.62607015\\times10^{-34}\\ \\mathrm{J\\,s}.\n$$\n\nProducts P and Q are formed irreversibly, and product inhibition is absent. Define the analytically observed reactant concentration by\n\n$$\n[A]_{\\mathrm T}=[A]+[I].\n$$\n\n(1) Derive expressions for the equilibrium constant $K_{\\mathrm{eq}}(T)=[I]/[A]$, the two elementary rate constants $k_P(T)$ and $k_Q(T)$, and the pseudo-first-order disappearance rate constant $k_{\\mathrm{obs}}(T)$ defined by\n\n$$\n-\\frac{d[A]_{\\mathrm T}}{dt}=k_{\\mathrm{obs}}[A]_{\\mathrm T}.\n$$\n\n(2) Derive an expression for the instantaneous product-rate ratio $r_P/r_Q$. Determine the temperature at which $r_P=r_Q$.\n\n(3) At $T=500.0\\ \\mathrm{K}$, calculate $K_{\\mathrm{eq}}$, $k_P$, $k_Q$, $k_{\\mathrm{obs}}$, and the branching fractions to P and Q.\n\n(4) Define the apparent activation energy of the overall disappearance process by\n\n$$\nE_{\\mathrm{app}}(T)\n=\n-R\\frac{d\\ln k_{\\mathrm{obs}}}{d(1/T)}.\n$$\n\nDerive $E_{\\mathrm{app}}(T)$ from the expression obtained in part (1), without replacing the two parallel pathways by a single Arrhenius process. Evaluate $E_{\\mathrm{app}}$ at $500.0\\ \\mathrm{K}$.\n\n(5) Now consider an isotopically substituted reactant for which only the activation enthalpies change:\n\n$$\n\\Delta H_{P,\\mathrm{iso}}^\\ddagger\n=\n\\Delta H_P^\\ddagger+4.00\\ \\mathrm{kJ\\,mol^{-1}},\n$$\n\n$$\n\\Delta H_{Q,\\mathrm{iso}}^\\ddagger\n=\n\\Delta H_Q^\\ddagger+1.00\\ \\mathrm{kJ\\,mol^{-1}},\n$$\n\nwhile all activation entropies and the A-I pre-equilibrium remain unchanged. Determine the new temperature at which $r_P=r_Q$, and calculate $r_P/r_Q$ at $500.0\\ \\mathrm{K}$. Explain why isotope substitution can change product selectivity even though it does not alter the pre-equilibrium."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

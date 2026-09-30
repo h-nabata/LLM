@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Translate the following passage into English. Output only the English translation.:\n\n進むべき道を決めるには、事前に入念に検討し、最も満足のいく選択をしたいものだ。ただ、その道が本当に当人に実りをもたらしてくれるかどうかを知るには、ある程度の時間をかけて実際に経験するほかない。ここに避けがたい試練がある。岐路に立った時、その選択の先には想像もつかない世界が待つに違いないと腹をくくることも時には必要だろう。"
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

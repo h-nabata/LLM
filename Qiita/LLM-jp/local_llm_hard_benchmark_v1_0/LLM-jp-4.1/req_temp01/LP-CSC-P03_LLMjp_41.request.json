@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Consider the following control-flow graph with entry block $B0$ and exit block $B6$.\n\nSuccessor lists:\n\n- $B0: B1$\n- $B1: B2,B5$\n- $B2: B3,B4$\n- $B3: B2$\n- $B4: B1,B5$\n- $B5: B6$\n- $B6:$ no successors\n\nFor the three variables $x,y,z$, the block-level USE and DEF sets are:\n\n| Block | USE | DEF |\n|---|---|---|\n| B0 | $\\varnothing$ | $\\{x,y\\}$ |\n| B1 | $\\{x\\}$ | $\\{z\\}$ |\n| B2 | $\\{y,z\\}$ | $\\{y\\}$ |\n| B3 | $\\{x,y\\}$ | $\\{x\\}$ |\n| B4 | $\\{x,z\\}$ | $\\{x,z\\}$ |\n| B5 | $\\{x,y,z\\}$ | $\\{y\\}$ |\n| B6 | $\\{y\\}$ | $\\varnothing$ |\n\nUse the following standard definitions.\n\n- A block dominates itself.\n- $idom(B)$ is the immediate dominator of $B$.\n- $DF(X)$ is the set of blocks $Y$ such that $X$ dominates some predecessor of $Y$, but $X$ does not strictly dominate $Y$.\n- Backward liveness is defined by\n  $LIVEOUT(B)=\\bigcup_{S\\in succ(B)} LIVEIN(S)$\n  and\n  $LIVEIN(B)=USE(B)\\cup(LIVEOUT(B)-DEF(B))$.\n\nFor SSA construction, the original definition blocks are:\n\n- $x$: $B0,B3,B4$\n- $y$: $B0,B2,B5$\n- $z$: $B1,B4$\n\nFor unpruned SSA, place $\\phi$-functions using the standard iterated-dominance-frontier algorithm.\n\nFor pruned SSA, use the same iteration, but place a $\\phi$-function for variable $v$ at block $B$ only if $v\\in LIVEIN(B)$ according to the liveness solution above. A block at which a $\\phi$-function is actually placed is treated as a new definition block for further iteration.\n\nDetermine the immediate dominators, every dominance frontier, every $LIVEIN$ set, and the $\\phi$-placement sets for both unpruned and pruned SSA.\n\nOutput only a JSON object with no explanation:\n\n{\"idom\":{\"B0\":null,\"B1\":\"...\",\"B2\":\"...\",\"B3\":\"...\",\"B4\":\"...\",\"B5\":\"...\",\"B6\":\"...\"},\"df\":{\"B0\":[...],\"B1\":[...],\"B2\":[...],\"B3\":[...],\"B4\":[...],\"B5\":[...],\"B6\":[...]},\"live_in\":{\"B0\":[...],\"B1\":[...],\"B2\":[...],\"B3\":[...],\"B4\":[...],\"B5\":[...],\"B6\":[...]},\"phi_unpruned\":{\"x\":[...],\"y\":[...],\"z\":[...]},\"phi_pruned\":{\"x\":[...],\"y\":[...],\"z\":[...]}}\n\nSort block names and variable names lexicographically inside every array."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

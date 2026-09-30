@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Consider the following unit-capacity min-cost flow network. The left vertices are $A,B,C,D$, the right vertices are $W,X,Y,Z$, and there are source and sink vertices $s,t$.\n\nFor every left vertex $u$, the edge $s\\to u$ has capacity $1$ and cost $0$. For every right vertex $v$, the edge $v\\to t$ has capacity $1$ and cost $0$. Between the left and right sides, every edge has capacity $1$, with costs:\n\n|   | W | X | Y | Z |\n|---|---:|---:|---:|---:|\n| A | 8 | 4 | 6 | 3 |\n| B | 4 | 6 | 4 | 8 |\n| C | 4 | 8 | 5 | 0 |\n| D | 6 | 9 | 5 | 0 |\n\nStarting from zero flow, run the successive shortest augmenting path algorithm until the flow value is $4$.\n\nAfter each augmentation, use the standard residual network: if one unit of flow is sent through an edge of cost $c$, its reverse residual edge has capacity $1$ and cost $-c$. In each round, choose a simple $s$-$t$ residual path of minimum total cost. If several such paths have the same minimum cost, choose the one whose sequence of intermediate vertex labels is lexicographically smallest under\n$A<B<C<D<W<X<Y<Z$.\nAugment one unit along the chosen path.\n\nDetermine all four augmenting paths in order, the residual cost of each path at the time it is chosen, the final matching, and the total cost of the final flow.\n\nOutput only a JSON object with no explanation, in the following form:\n\n{\"augmentations\":[{\"path\":[\"s\",\"...\",\"t\"],\"cost\":integer},...],\"matching\":[[\"A\",\"...\"],[\"B\",\"...\"],[\"C\",\"...\"],[\"D\",\"...\"]],\"total_cost\":integer}\n\nList the final matching in the order $A,B,C,D$."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

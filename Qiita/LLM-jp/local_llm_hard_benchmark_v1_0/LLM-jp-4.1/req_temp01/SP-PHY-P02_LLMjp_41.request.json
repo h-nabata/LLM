@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "A particle of mass $m$ moves in a plane under the central potential\n\n$$\nV(r)=-\\frac{k}{r}+\\frac{\\lambda}{2r^2},\n$$\n\nwhere $k>0$ and $\\lambda$ is a real constant. Let the nonzero angular momentum be $\\ell$.\n\n(1) Determine the effective potential $V_{\\mathrm{eff}}(r)$. Find the condition under which a stable circular orbit of finite radius exists, and determine its radius $r_0$.\n\n(2) Let $u=1/r$. Derive the differential equation satisfied by the orbit $u(\\phi)$.\n\n(3) For a bound orbit, express the solution in the form\n\n$$u(\\phi)=u_0 \\left( 1+e\\cos[\\nu(\\phi-\\phi_0)]\\right )$$\n\nand determine $u_0$ and $\\nu$. Also determine the increase in azimuthal angle between two successive periapses.\n\n(4) Relative to the Kepler problem $\\lambda=0$, determine the periapsis precession per radial period. Then obtain its leading-order approximation for\n\n$$\n\\left|\\frac{m\\lambda}{\\ell^2}\\right|\\ll1,\n$$\n\nand state whether the precession is prograde or retrograde for each sign of $\\lambda$.\n\nFinally, for a noncircular bound orbit with $e\\neq0$, state the necessary and sufficient condition in terms of $\\nu$ for the orbit to be closed."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

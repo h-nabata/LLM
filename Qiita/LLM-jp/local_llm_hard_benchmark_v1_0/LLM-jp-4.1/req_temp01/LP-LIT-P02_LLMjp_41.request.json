@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Read the following conversation and report.\n\nAfter the test was completed, the lead researcher, James, made the following statement:\n\n\"I would not say that the test was a success as planned. However, it would not be accurate to say that the test itself was a failure either. Of the three evaluation criteria, the temperature was within the specified range. The pressure could not be evaluated because there was a malfunction in the measuring instrument. The purity was below the required standard.\"\n\nEmily, the staff member responsible for the test, asked:\n\n\"Then does that mean we do not need to change the temperature setting for the next test?\"\n\nJames replied:\n\n\"At the very least, we cannot say that the setting needs to be changed solely on the basis of the results of this test.\"\n\nLater, Emily wrote the following in an internal report:\n\n\"This test confirmed that the current temperature setting is appropriate. In addition, it is likely that the pressure met the required standard.\"\n\nFor each of the following statements, classify it as E if it is logically supported by the conversation, C if it contradicts the conversation, and U if it cannot be determined from the conversation alone.\n\nA. The temperature was within the specified range in this test.\n\nB. This test confirmed that the current temperature setting is generally appropriate.\n\nC. The possibility that the pressure met the required standard has been ruled out.\n\nD. It is likely that the pressure met the required standard.\n\nE. The purity did not meet the required standard.\n\nF. James stated that the temperature setting must not be changed for the next test.\n\nOutput only a JSON object in the following format:\n\n{\"A\":\"E/C/U\",\"B\":\"E/C/U\",\"C\":\"E/C/U\",\"D\":\"E/C/U\",\"E\":\"E/C/U\",\"F\":\"E/C/U\"}"
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Consider a two-dimensional, steady flow of an incompressible and inviscid fluid of density $\\rho$. Outside a circular cylinder of radius $a$, i.e. for $r\\ge a$, the stream function is\n\n$$\n\\psi(r,\\theta)=U\\left(r-\\frac{a^2}{r}\\right)\\sin\\theta\n-\\frac{\\Gamma}{2\\pi}\\ln\\frac{r}{a}.\n$$\n\nThe velocity components in polar coordinates are defined by\n\n$$\nv_r=\\frac{1}{r}\\frac{\\partial\\psi}{\\partial\\theta},\n\\qquad\nv_\\theta=-\\frac{\\partial\\psi}{\\partial r}.\n$$\n\nLet $U>0$. The circulation $\\Gamma$ is real, with $\\Gamma>0$ corresponding to counterclockwise circulation.\n\n(1) Determine $v_r$ and $v_\\theta$, and show that the fluid does not penetrate the cylinder surface $r=a$.\n\n(2) Determine the condition on $\\Gamma$ for stagnation points to exist on the surface of the cylinder, and determine their angular positions.\n\n(3) Let the pressure at infinity be $p_\\infty$. Using Bernoulli's theorem, determine the pressure distribution $p(a,\\theta)$ on the surface of the cylinder.\n\n(4) Integrate the pressure over the cylinder surface and determine the $x$- and $y$-components of the force per unit length exerted by the fluid on the cylinder.\n\nDo not merely quote the Kutta?Joukowski formula. Derive the sign of the force explicitly using the circulation convention specified above."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

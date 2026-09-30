@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "For a positive integer $a$, let $d(a)$ denote the number of digits in its decimal representation. For two positive integers $x$ and $y$, define the integer obtained by concatenating the decimal representations of $x$ and $y$ in that order by\n\n$$\nC(x,y)=x10^{d(y)}+y.\n$$\n\nAll integers are written in their usual decimal representation without leading zeros.\n\n(1) Let $k\\ge 1$. Suppose that $x$ and $y$ are both positive $k$-digit integers. Determine, as a function of $k$, the number of ordered pairs $(x,y)$ satisfying\n\n$$\nxy\\mid C(x,y).\n$$\n\nFor example,\n\n$$\nC(17,34)=1734=3\\cdot17\\cdot34,\n$$\n\nand\n\n$$\nC(143,143)=143143=7\\cdot143\\cdot143.\n$$\n\n(2) Now allow $x$ and $y$ to have different numbers of digits. For positive integers $x$ and $y$ satisfying\n\n$$\nxy\\mid C(x,y),\n$$\n\ndetermine all possible positive integer values of\n\n$$\n\\frac{C(x,y)}{xy}.\n$$\n\nFor example,\n\n$$\nC(3,15)=315=7\\cdot3\\cdot15,\n$$\n\nso $7$ is one possible value."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

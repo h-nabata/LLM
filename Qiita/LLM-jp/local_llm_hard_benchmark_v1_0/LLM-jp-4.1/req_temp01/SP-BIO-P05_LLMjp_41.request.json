@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Three genes, A/a, B/b, and C/c, are located on the same chromosome. A female heterozygous for all three loci has the parental haplotypes $ABC/abc$ and is testcrossed to an $abc/abc$ individual.\n\nThe resulting offspring are classified according to the gamete produced by the heterozygous parent. However, genotype-dependent viability selection occurs after fertilization.\n\nOffspring that are homozygous recessive at both locus A and locus C, i.e. $a/a;c/c$, survive to the time of scoring with probability $1/2$, whereas all other offspring survive with probability 1.\n\nAssume that viability depends only on this joint A-C genotype and is otherwise independent of genotype and meiotic recombination.\n\nThe observed numbers of surviving offspring are:\n\n| Gamete from heterozygous parent | Observed survivors |\n| --- | ---: |\n| $ABC$ | 344 |\n| $abc$ | 170 |\n| $Abc$ | 80 |\n| $aBC$ | 80 |\n| $ABc$ | 70 |\n| $abC$ | 70 |\n| $AbC$ | 8 |\n| $aBc$ | 4 |\n\nAnswer all of the following.\n\n1. Determine which gamete classes produce offspring subject to the viability penalty. Correct the observed survivor counts to estimate the numbers of zygotes originally produced in all eight classes, and confirm the corrected total.\n\n2. Using the corrected counts, identify the two parental classes and the two double-crossover classes. Determine the gene order.\n\n3. Calculate the recombination fraction and map distance for each of the two adjacent intervals. Express the map distances in centimorgans.\n\n4. Calculate the recombination fraction between the two outer genes directly from the corrected offspring classes. Explain why this recombination fraction is not equal to the sum of the two adjacent map distances.\n\n5. Under the assumption that crossovers in the two adjacent intervals occur independently, calculate the expected number of double-crossover progeny from the corrected data. From the observed corrected number of double crossovers, calculate the coefficient of coincidence and interference, using\n\n$\\text{coefficient of coincidence}=\\frac{\\text{observed DCO}}{\\text{expected DCO}}$\n\nand\n\n$\\text{interference}=1-\\text{coefficient of coincidence}$.\n\n6. Now deliberately ignore viability selection and repeat the linkage calculations using the observed survivor counts directly. Calculate the apparent recombination fractions for the two adjacent intervals and for the two outer genes. Also calculate the apparent coefficient of coincidence and interference.\n\n7. Compare the corrected and uncorrected results quantitatively. Explain why genotype-dependent viability selection distorts the linkage estimates in this experiment. Your explanation should identify which reciprocal classes are affected unequally and why post-fertilization selection can be mistaken for an altered meiotic recombination pattern.\n\nShow all calculations."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

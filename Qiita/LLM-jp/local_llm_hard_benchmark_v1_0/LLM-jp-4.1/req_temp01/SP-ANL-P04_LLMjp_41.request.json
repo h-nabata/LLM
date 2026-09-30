@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Let $ABC$ be an acute triangle with orthocenter $H$ and circumcircle $k$. Let $S$ be the intersection point of the tangents to $k$ at points $A$ and $B$, let $M$ be the midpoint of $AB$, and let $H'$ be the reflection of $H$ with respect to $AB$. Let $P$ be the intersection point of the line $MH$ with the circumcircle $k$ such that $H$ lies between $M$ and $P$. Prove that the points $S$, $H'$, and $P$ are collinear."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

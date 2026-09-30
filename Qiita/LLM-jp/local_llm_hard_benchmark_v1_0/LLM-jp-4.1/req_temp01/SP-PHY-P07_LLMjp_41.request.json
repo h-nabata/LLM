@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Consider the $n=2$ level of the hydrogen atom. Neglect electron spin, fine structure, hyperfine structure, and the diamagnetic term proportional to $B^2$.\n\nApply simultaneously a weak uniform electric field\n\n$$\n\\mathbf E=E\\mathbf e_z\n$$\n\nand a weak uniform magnetic field\n\n$$\n\\mathbf B=B\\mathbf e_x.\n$$\n\nRestrict attention to the degenerate $n=2$ subspace and use the real orbital basis\n\n$$\n|2s\\rangle,\\quad |2p_x\\rangle,\\quad |2p_y\\rangle,\\quad |2p_z\\rangle.\n$$\n\nThe perturbation Hamiltonian is\n\n$$\nH'=eEz+\\frac{\\mu_BB}{\\hbar}L_x,\n$$\n\nwhere $e>0$ is the elementary charge and $\\mu_B$ is the Bohr magneton.\n\nChoose the phases of the basis states such that\n\n$$\n\\langle 2s|eEz|2p_z\\rangle=d,\n\\qquad\nd=3ea_0E.\n$$\n\nAll other Stark matrix elements between $|2s\\rangle$ and the $2p$ states may be taken to vanish.\n\n(1) Determine the $4\\times4$ matrix representation of $H'$ in the ordered basis\n\n$$\n(|2s\\rangle,|2p_z\\rangle,|2p_y\\rangle,|2p_x\\rangle).\n$$\n\n(2) Determine all first-order energy shifts of the $n=2$ level and state their degeneracies.\n\n(3) Show that the limits $E=0$ and $B=0$ reproduce the usual orbital Zeeman effect and linear Stark effect, respectively.\n\n(4) Explain why, when the electric and magnetic fields are perpendicular, it is incorrect simply to add the Stark shifts $\\pm d$ independently to the Zeeman shifts $\\pm\\mu_BB$."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

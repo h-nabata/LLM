@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Three processes $P_1,P_2,P_3$ communicate over reliable FIFO channels in both directions between every pair of processes. Each process $P_i$ has a local integer counter $c_i$, initially $0$. Sending or receiving an application message increments the local counter by $1$. Sending or receiving a snapshot marker does not change the counter.\n\nThe Chandy-Lamport snapshot algorithm is used according to the following exact rules.\n\n- When the initiator records its local state, it immediately sends a marker on every outgoing channel before performing any later application event. At the same time, it begins recording application messages arriving on each incoming channel. For each incoming channel, it stops recording that channel when the marker on that channel is received. The messages recorded in this interval constitute the recorded state of that incoming channel.\n- When the initiator records its local state, it immediately begins recording each incoming channel, and it stops recording a given incoming channel when the marker on that channel is received.\n- When a non-initiating process receives its first marker, it records its local state and treats the channel on which that first marker arrived as empty in the snapshot. It then immediately sends a marker on every outgoing channel before performing any later application event.\n- For every other incoming channel of that non-initiating process, it records all application messages received after recording its local state and before receiving the marker on that channel.\n- Marker messages themselves are never included in recorded channel states.\n\nNo events occur other than those listed below and the marker sends implied by the algorithm. The following is the actual chronological event order:\n\n1. $P_2$ sends application message $m_1$ to $P_1$.\n2. $P_3$ sends application message $m_2$ to $P_1$.\n3. $P_1$ sends application message $m_3$ to $P_3$.\n4. $P_3$ sends application message $m_4$ to $P_2$.\n5. $P_1$ initiates the snapshot, records its local state, and sends its markers.\n6. $P_2$ sends application message $m_5$ to $P_3$.\n7. $P_3$ receives $m_3$.\n8. $P_2$ receives the marker from $P_1$.\n9. $P_3$ receives the marker from $P_1$.\n10. $P_1$ receives $m_1$.\n11. $P_3$ receives $m_5$.\n12. $P_2$ receives $m_4$.\n13. $P_1$ receives $m_2$.\n14. $P_3$ receives the marker from $P_2$.\n15. $P_2$ receives the marker from $P_3$.\n16. $P_1$ receives the marker from $P_2$.\n17. $P_1$ receives the marker from $P_3$.\n\nDetermine the recorded local counter values and the recorded state of every directed channel. For channel states, list application-message IDs in receive order. Also state whether the resulting snapshot is a consistent cut.\n\nOutput only a JSON object with no explanation:\n\n{\"local\":{\"P1\":integer,\"P2\":integer,\"P3\":integer},\"channels\":{\"P1>P2\":[...],\"P1>P3\":[...],\"P2>P1\":[...],\"P2>P3\":[...],\"P3>P1\":[...],\"P3>P2\":[...]},\"consistent\":true_or_false}"
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

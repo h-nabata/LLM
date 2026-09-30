@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Translate the following passage into natural Japanese while preserving its logical structure, scope of negation, tense, and counterfactual meaning. Output only the Japanese translation.:\n\nHad the reviewers merely said that the evidence did not establish that the treatment was ineffective, the editor would not have taken them to be recommending publication. What changed her view was not that any reviewer withdrew the methodological objection, but that two of those who had raised it conceded that, even if the secondary endpoint had been specified post hoc, this alone would not explain why the primary analysis—whose result none of them disputed—favored the treatment."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "A mammalian gene X is induced by ligand L. Two cis-regulatory elements are suspected to contribute independently to the response: an enhancer E and a sequence U in the 3' untranslated region. A transcription factor A binds E, whereas an RNA-binding protein B binds U.\n\nNascent RNA was measured with an intronic probe and is assumed to be proportional to the transcription rate. Mature mRNA abundance and mRNA half-life were measured independently. For this problem, treat all measurements as steady-state measurements and assume that the first-order degradation approximation is valid.\n\nThe untreated wild-type condition is normalized to 1.0.\n\n| Condition | Nascent RNA (fold) | mRNA half-life, $t_{1/2}$ (min) | Mature mRNA (fold) |\n| --- | ---: | ---: | ---: |\n| WT, no L | 1.0 | 30 | 1.0 |\n| WT + L | 8.0 | 120 | 32 |\n| $aE$ + L | 2.0 | 120 | 8.0 |\n| $U^*$ + L | 8.0 | 30 | 8.0 |\n| $aE U^*$ + L | 2.0 | 30 | 2.0 |\n| A depleted + L | 1.2 | 118 | 4.7 |\n| B depleted + L | 7.8 | 32 | 8.3 |\n\nHere, $U^*$ is a mutation that prevents B from binding U but does not alter the coding sequence, polyadenylation site, or transcription termination.\n\nAssume that mature mRNA abundance satisfies\n\n$M \\propto k_{\\mathrm{syn}}/k_{\\mathrm{deg}}$\n\nand that\n\n$k_{\\mathrm{deg}} = \\ln(2)/t_{1/2}$.\n\nAnswer all of the following.\n\n1. Derive an expression for the expected fold change in steady-state mature mRNA relative to untreated WT in terms of the measured nascent-RNA fold change and $t_{1/2}$. Verify quantitatively that the first five rows are mutually consistent with the model.\n\n2. Based only on these data, infer the primary roles of E, U, factor A, and factor B. Distinguish effects on transcription from effects on mRNA degradation.\n\n3. Assume that depletion of A and depletion of B act independently and that simultaneous depletion gives the transcription rate observed with A depletion and the mRNA half-life observed with B depletion. Predict the mature-mRNA fold change after simultaneous depletion of A and B in the presence of L.\n\n4. A researcher measures only mature mRNA and observes an eightfold induction by L in an unknown mutant. Explain why this observation alone cannot distinguish between an approximately eightfold increase in transcription and a smaller transcriptional increase combined with increased mRNA stability. Name one experimental measurement that would distinguish the two mechanisms and explain what it measures.\n\nGive quantitative reasoning where appropriate and explicitly separate conclusions directly supported by the data from assumptions used in the calculation."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

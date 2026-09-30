@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "A database contains three integer items $X,Y,Z$, initially all equal to $0$. Transactions execute under snapshot isolation with the following exact rules.\n\n- A transaction reads the most recent committed versions that existed at its start time, together with its own private writes.\n- A transaction that attempts to commit succeeds if and only if no transaction that committed after its start time wrote any item in its own write set. Otherwise it aborts and none of its writes become visible.\n- Read-only effects do not cause aborts.\n\nThe execution is:\n\n- $T_1$ starts at time $0$, reads $Y$, and stages $X:=Y+1$.\n- $T_2$ also starts at time $0$, reads $X$, and stages $Y:=X+1$.\n- $T_1$ attempts to commit at time $2$.\n- $T_3$ and $T_4$ both start at time $3$, after the commit attempt of $T_1$ and before any later commit attempt.\n- $T_3$ reads $X$ and $Y$, and stages $Z:=X+Y+1$.\n- $T_4$ reads $Z$, and stages $Y:=Z+2$.\n- $T_4$ attempts to commit at time $4$.\n- $T_3$ attempts to commit at time $5$.\n- $T_2$ attempts to commit at time $6$.\n\nAfter determining which transactions commit, construct a multiversion dependency graph using only committed transactions and the following edge rules.\n\n- wr edge: add $T_i\\to T_j$ if $T_j$ reads a version written by $T_i$.\n- ww edge: add $T_i\\to T_j$ if both committed transactions write the same item and the version written by $T_i$ immediately precedes the version written by $T_j$ in commit order.\n- rw edge: add $T_i\\to T_j$ if $T_i$ reads a version of an item and $T_j$ commits, after $T_i$ has started, a different version of that item that was not visible in $T_i$'s snapshot. The commit of $T_j$ need not occur after the commit of $T_i$.\n\nInitial database versions are not considered to have been written by any transaction and therefore do not themselves generate wr edges.\n\nIf more than one edge type exists for the same ordered pair, list each type separately. A committed execution is serializable for this problem if and only if this dependency graph is acyclic.\n\nDetermine the values returned by every read, the committed transactions in commit-time order, the aborted transactions, the final values of $X,Y,Z$, all dependency edges, and whether the committed execution is serializable.\n\nOutput only a JSON object with no explanation:\n\n{\"reads\":{\"T1.Y\":integer,\"T2.X\":integer,\"T3.X\":integer,\"T3.Y\":integer,\"T4.Z\":integer},\"committed\":[\"...\"],\"aborted\":[\"...\"],\"final\":{\"X\":integer,\"Y\":integer,\"Z\":integer},\"edges\":[\"...\"],\"serializable\":true_or_false}\n\nRepresent an edge as \"Ti>Tj:type\", where type is \"wr\", \"ww\", or \"rw\", and list edges lexicographically."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.1,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}
