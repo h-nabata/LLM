@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "The following are the only known facts about a set of research proposals.\n\nFor the purposes of this problem, a proposal has non-public data if and only if it does not have public data.\n\n1. Every accepted proposal has passed ethical review.\n2. Every accepted proposal satisfies exactly one of the following two conditions:\n   - it has undergone a replication study;\n   - it is a Pilot study and has undergone an external audit.\n   \n   Thus, for an accepted proposal, these two conditions are mutually exclusive.\n3. No Pilot study has undergone a replication study.\n4. Every externally audited proposal with non-public data is a multi-center study.\n5. Every multi-center study has either public data or has undergone a replication study, or both.\n6. There exists at least one accepted proposal with non-public data.\n7. Every proposal that has undergone a replication study and has non-public data is externally registered.\n\nAssume no additional relationships among attributes beyond those explicitly stated above.\n\nClassify each of the following statements as one of:\n\nN = necessarily true in every possible world\nP = true in some possible worlds and false in others\nI = impossible, i.e. false in every possible world\n\nA. There exists at least one accepted proposal that has undergone a replication study.\nB. Every accepted proposal has undergone a replication study.\nC. Every accepted Pilot study has public data.\nD. There exists at least one externally registered proposal.\nE. Every externally registered proposal has been accepted.\nF. There exists a proposal that is simultaneously accepted, externally audited, and has undergone a replication study.\nG. There exists a multi-center study that has not been accepted.\nH. There exists an accepted Pilot study with non-public data.\n\nOutput only a JSON object with no explanation, with the keys in the order A, B, C, D, E, F, G, H."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

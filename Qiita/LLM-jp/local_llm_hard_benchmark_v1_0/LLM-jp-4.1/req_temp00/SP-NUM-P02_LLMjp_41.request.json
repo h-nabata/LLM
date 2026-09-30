@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Find all quadruples $(x,y,z,w)\\in\\mathbb{C}^4$ satisfying\n\n$$\n\\begin{cases}\n\\dfrac{2x}{1-x^2}=y,\\\\[5pt]\n\\dfrac{2y}{1-y^2}=z,\\\\[5pt]\n\\dfrac{2z}{1-z^2}=w,\\\\[5pt]\n\\dfrac{2w}{1-w^2}=x.\n\\end{cases}\n$$"
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

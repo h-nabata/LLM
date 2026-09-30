@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Consider an idealized vertebrate neural-tube system in which Sonic Hedgehog, Shh, specifies ventral neural progenitor identities through Smoothened, Smo, and Gli-dependent transcription.\n\nFor this problem, assume the causal signaling pathway is to be inferred from the experimental data rather than simply assumed. Also assume that no secondary signaling pathway from neighboring cells affects the stated cell fates.\n\nThree mutually exclusive progenitor states are monitored:\n\nPax7-positive: dorsal-like state.\n\nOlig2-positive: intermediate ventral state.\n\nNkx2.2-positive: strongly ventral state.\n\nThe following results are obtained after 24 h:\n\n| Condition | Final predominant state |\n| --- | --- |\n| WT, no Shh | Pax7-positive |\n| WT, 2 nM Shh for 24 h | Olig2-positive |\n| WT, 10 nM Shh for 24 h | Nkx2.2-positive |\n| WT, 10 nM Shh for 4 h, then washout for 20 h | Olig2-positive |\n| WT, 10 nM Shh for 12 h, then washout for 12 h | Nkx2.2-positive |\n| $Smo^{-/-}$, 10 nM Shh for 24 h | Pax7-positive |\n| $Smo^{-/-}$, no Shh, constitutively active GliA induced for 12 h | Nkx2.2-positive |\n| WT, Smo agonist for 24 h plus dominant-negative Gli that blocks Gli-dependent transcription | Pax7-positive |\n\nAnswer all of the following.\n\n1. Use the genetic and pharmacological perturbations to infer the causal order among Shh, Smo, and Gli-dependent transcription. Identify which observations provide the relevant epistasis evidence.\n\n2. Explain why a model in which cell fate depends only on the instantaneous Shh concentration is insufficient. Also explain why a model in which cell fate depends only on exposure duration, irrespective of concentration, is insufficient.\n\n3. Based on the data, formulate the simplest qualitative model that accounts for both Shh concentration and duration of signaling in specifying Olig2-positive versus Nkx2.2-positive states. You do not need to propose a detailed molecular mechanism.\n\n4. Consider a small $Smo^{-/-}$ clone surrounded by WT cells in a region continuously exposed to 10 nM extracellular Shh. Under the assumptions of this problem, predict the predominant fate of the mutant clone and explain whether the defect is cell-autonomous with respect to Shh signal transduction.\n\n5. Now suppose constitutively active GliA is induced in that $Smo^{-/-}$ clone for only 4 h. Can the final fate of the clone be uniquely predicted from the data provided? Answer either yes or no and justify your answer. Do not assume that 4 h of GliA activity is equivalent to 4 h of 10 nM Shh unless the data establish that equivalence.\n\n6. A student concludes that the 10 nM Shh, 12 h experiment proves that extracellular Shh concentration alone irreversibly specifies the Nkx2.2-positive fate. Identify the logical error in this conclusion.\n\nDistinguish conclusions that are directly supported by the experiments from mechanistic interpretations that remain underdetermined."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

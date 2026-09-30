@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Consider the following Hindley-Milner type system.\n\nTypes are generated from:\n\n- base types Int and Bool,\n- type variables,\n- product types,\n- function types.\n\nThe language contains integer literal 0, Boolean literal true, variables, function abstraction \"fun x -> e\", application, pairs \"(e1,e2)\", and nonrecursive let-binding \"let x = e1 in e2\".\n\nUse standard Hindley-Milner inference with the following exact conventions:\n\n- Function parameters are monomorphic.\n- At a let-binding, generalize exactly those type variables in the inferred type of the bound expression that are not free in the current typing environment.\n- There is no value restriction.\n- Let-bindings are nonrecursive.\n- There is no subtyping or overloading.\n- Application associates to the left.\n\nFor each expression below, determine whether it is typable. If it is typable, give its principal type. If it is not typable, write \"UNTYPABLE\".\n\nE1:\nlet f = fun x -> x in\nlet g = f f in\n(g 0, g true)\n\nE2:\nfun f ->\n  let g = fun x -> f (x,x) in\n  (g 0, g true)\n\nE3:\nlet compose = fun f -> fun g -> fun x -> f (g x) in\nfun h -> compose h h\n\nE4:\nfun x ->\n  let k = fun y -> x in\n  (k 0, k true)\n\nE5:\nfun x ->\n  let id = fun y -> y in\n  (id x, id id)\n\nUse the following canonical notation for output types:\n\n- Int and Bool for base types;\n- type variables \"'a\", \"'b\", ... in order of first occurrence;\n- product type \"(T1*T2)\";\n- function type \"(T1->T2)\";\n- fully parenthesize every product and function type.\n\nTypes that differ only by renaming type variables are considered the same, but your output must use the canonical variable names specified above.\n\nOutput only a JSON object with no explanation:\n\n{\"E1\":\"...\",\"E2\":\"...\",\"E3\":\"...\",\"E4\":\"...\",\"E5\":\"...\"}"
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

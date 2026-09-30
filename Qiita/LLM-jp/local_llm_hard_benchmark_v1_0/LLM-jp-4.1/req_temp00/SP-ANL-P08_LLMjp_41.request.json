@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Let $N\\ge 4$ be an integer. Determine all values of $N$ for which there exists a simple orthogonal $N$-gon whose consecutive side lengths, in cyclic order, are\n\n$$\n1,2,3,\\ldots,N.\n$$\n\nHere, a simple orthogonal polygon means a non-self-intersecting polygon in which every side is horizontal or vertical and every pair of consecutive sides is perpendicular."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

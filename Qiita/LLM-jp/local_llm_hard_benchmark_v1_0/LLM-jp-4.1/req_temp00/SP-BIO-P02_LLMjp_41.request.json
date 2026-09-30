@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "A eukaryotic gene contains six exons. Its normal translation termination codon is located in exon 6. For this problem, use the following simplified rule for nonsense-mediated mRNA decay (NMD):\n\nA translation termination codon triggers NMD if it lies more than 50 nucleotides upstream of at least one exon-exon junction remaining in the mature mRNA.\n\nAssume that exon-junction complexes are deposited normally, transcription rates are identical among all constructs, translation initiation rates are identical unless explicitly stated otherwise, and no other RNA-surveillance pathway is relevant.\n\nThe following constructs were analyzed.\n\nWT: the normal termination codon in exon 6.\n\nConstruct A: a premature termination codon, PTC, is introduced in exon 4, 90 nucleotides upstream of the exon 4-exon 5 junction.\n\nConstruct B: the same PTC as in A is present, but exon 5 is skipped. In the resulting mature RNA, the PTC lies 35 nucleotides upstream of the exon 4-exon 6 junction. Exon skipping does not otherwise alter RNA stability.\n\nConstruct C: a PTC is introduced in exon 6, 80 nucleotides upstream of the normal termination codon. There is no exon-exon junction downstream of this PTC.\n\nConstruct D: identical to construct A, but UPF1 is strongly depleted.\n\nMeasured mRNA half-lives are:\n\n| Construct | $t_{1/2}$ (min) |\n| --- | ---: |\n| WT | 180 |\n| A | 24 |\n| B | 165 |\n| C | 170 |\n| D | 155 |\n\nAnswer all of the following.\n\n1. For each of A, B, and C, predict whether the transcript should be an NMD substrate according to the rule given above. Explain how alternative splicing changes the NMD status of B relative to A.\n\n2. Assuming equal transcription rates and first-order degradation, calculate the expected steady-state mRNA abundance of A, B, C, and D relative to WT. Use $M \\propto t_{1/2}$ under the stated assumptions.\n\n3. Explain why depletion of UPF1 strongly stabilizes construct A. Then predict what should happen to the abundance of the truncated protein encoded by A after UPF1 depletion, assuming that the truncated polypeptide itself is stable.\n\n4. A short treatment with a translation-elongation inhibitor is applied immediately before an RNA-decay experiment. Predict the qualitative effect on the measured decay of construct A and explain why NMD is translation-dependent.\n\n5. Finally, consider a mutant cell in which exon-junction-complex deposition is abolished but transcription, splicing, nuclear export, and translation are otherwise normal. Predict qualitatively the mRNA abundance and truncated-protein production from construct A. State clearly which part of your answer follows from the simplified NMD rule and which part requires the additional assumptions given in the problem."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

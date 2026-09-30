@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Read the following passage and answer the questions that follow.\n\nOn Monday evening, David, the proofreader, said to Emma, the editor:\n\n\"I haven't read the revised version that Michael sent this morning yet. As for the version I read and returned last week, I think there are no other major problems as long as the paragraph immediately before the conclusion is revised.\"\n\nAbout an hour before hearing this, Emma had sent Michael the following email:\n\n\"David has more or less approved it as well. It looks like everything should be fine if you just address his final comment.\"\n\nThe next morning, Michael replied:\n\n\"In the latest version I sent last night, I deleted the paragraph you mentioned. I moved the table corresponding to that paragraph to the appendix, but the table itself has not been changed from the version I sent last week.\"\n\nEmma forwarded the email to David and wrote:\n\n\"It seems that the condition you mentioned yesterday has been satisfied.\"\n\nDavid replied:\n\n\"What I asked for was a revision, not deletion. Also, the version I read was last week's version, not the latest version sent last night.\"\n\nFor each of the following statements, write T if it must be true based on the passage, F if it contradicts the passage, and U if it cannot be determined from the passage alone.\n\nA. By Monday evening, David had read the revised version that Michael had sent that morning.\n\nB. At the time Emma wrote the email, David had not yet read the revised version sent that day.\n\nC. In the latest version, Michael left the paragraph that David had objected to in the main text and rewrote its contents.\n\nD. By Tuesday, it can be concluded that David would necessarily approve the latest version if he read it.\n\nE. David's statements on Monday and Tuesday are consistent with each other on the point that the paragraph in last week's version required a change.\n\nOutput only a JSON object in the following format, with no explanation:\n\n{\"A\":\"T/F/U\",\"B\":\"T/F/U\",\"C\":\"T/F/U\",\"D\":\"T/F/U\",\"E\":\"T/F/U\"}"
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Translate the following passage into natural Japanese while preserving its argumentative structure, the scope of its qualifications, and the distinction between what the critic asserts and what the critic deliberately leaves unresolved. Retain the quoted Classical Chinese lines exactly as they appear in the source text. Do not replace them with a Japanese kundoku reading. Translate the English discussion surrounding them into Japanese. Output only the Japanese translation.:\n\nThe critic invokes Du Fu's lines,\n\n「國破山河在，城春草木深。感時花濺淚，恨別鳥驚心。」\n\nnot as evidence that the persistence of the natural world somehow compensates for political devastation, but precisely to resist that consolation. On this reading, 「山河在」 is not equivalent to saying that the country, in any politically meaningful sense, endures: what remains is set against, and made painful by, the preceding 「國破」. Nor does the critic regard 「城春」 as undoing the destruction. The arrival of spring makes the ruined city more, not less, difficult to look at.\n\nThe next couplet is deliberately treated with greater caution. The critic notes that 「花濺淚」 can be read in more than one way and refuses to settle too quickly whether the flowers are poetically imagined as shedding tears, whether the sight of the flowers causes the speaker to weep, or whether the line is effective precisely because those possibilities are not cleanly separated. Her claim is therefore not that grammatical ambiguity is irrelevant, but that resolving it is not a prerequisite for understanding the emotional relation the couplet establishes between perceiver and perceived.\n\nHad the poem merely opposed a ruined human order to an untouched and therefore consoling natural order, the contrast would be comparatively simple. The critic's argument is that it does something more difficult: spring remains spring, the mountains and rivers remain, and yet none of this cancels the loss against which those continuities are perceived. This is not to say that the poem permits no consolation at all. It is only to say that consolation cannot be inferred from the persistence of nature alone."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

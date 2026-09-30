@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Let $f:\\mathbb{R}\\to\\mathbb{R}$ be defined by\n\n$$\nf(x)=\\int_x^{x+1}\\log(4t^2+1)\\,dt,\n$$\n\nwhere $\\log$ denotes the natural logarithm.\n\nAnswer the following questions.\n\n(1) Determine all real values of $x$ at which $f(x)$ has a local extremum. Classify each extremum as a local maximum or local minimum, and determine the corresponding value of $f(x)$.\n\n(2) Evaluate the limit\n\n$$\n\\lim_{x\\to\\infty} x\\left(f(x)-f(x-1)\\right).\n$$"
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

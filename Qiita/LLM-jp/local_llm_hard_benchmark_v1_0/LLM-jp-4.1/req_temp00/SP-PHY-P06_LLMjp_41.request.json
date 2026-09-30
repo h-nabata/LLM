@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "A uniform string of tension $T$ and linear mass density $\\mu$ extends over $-\\infty<x<\\infty$.\n\nAt $x=0$, a point mass $M$ is inserted into the string. The mass is also connected to a fixed support by a spring of spring constant $K>0$. The displacement of the point mass is always equal to the displacement of the string at $x=0$. There is no dissipation.\n\nA wave of angular frequency $\\omega$ is incident from the left. Define the wave speed and wavenumber by\n\n$$\nc=\\sqrt{\\frac{T}{\\mu}},\n\\qquad\nk=\\frac{\\omega}{c}.\n$$\n\nThe displacement is written as\n\n$$\ny(x,t)=\n\\begin{cases}\n\\operatorname{Re}\\left[(e^{ikx}+r e^{-ikx})e^{-i\\omega t}\\right],&x<0,\\\\\n\\operatorname{Re}\\left[t e^{ikx}e^{-i\\omega t}\\right],&x>0.\n\\end{cases}\n$$\n\n(1) Using continuity of displacement at $x=0$ and the equation of motion of the point mass, derive the equations satisfied by the reflection and transmission amplitudes $r$ and $t$.\n\n(2) Define\n\n$$\n\\eta=\\frac{K-M\\omega^2}{2kT}.\n$$\n\nDetermine $r$ and $t$ in terms of $\\eta$.\n\n(3) Determine the energy reflection coefficient $R$ and the energy transmission coefficient $\\mathcal T$, and show that\n\n$$\nR+\\mathcal T=1.\n$$\n\n(4) Determine the angular frequency at which perfect transmission occurs, and explain the physical reason for this phenomenon."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

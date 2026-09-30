@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "There are seven assumptions about a model.\n\n1. Every high-risk model that has been deployed has been audited.\n2. Every model that has been both audited and deployed is either calibrated or externally validated, or both.\n3. Any high-risk model that is externally validated but not calibrated is not deployed.\n4. There exists at least one model that is both high-risk and deployed.\n5. Every model that is high-risk, deployed, and not calibrated is subject to human oversight.\n6. Any model that is both high-risk and subject to human oversight is not deployed.\n7. Every calibrated model has been audited.\n\nLet conclusion C be:\n\n\"There exists at least one model that is simultaneously high-risk, deployed, and calibrated.\"\n\nUsing classical logic, and assuming no relationships other than those explicitly stated, find all inclusion-minimal subsets of the seven assumptions that logically imply C.\n\nThat is, find all subsets of the assumptions such that C follows from the entire subset, but if any one assumption is removed from that subset, C no longer necessarily follows.\n\nOutput only a two-dimensional JSON array, with no explanation.\n\nWithin each inner array, list the assumption numbers in ascending order. Order the inner arrays lexicographically: first by their first element, then by their second element, and so on."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

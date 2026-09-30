@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Read the following passage carefully.\n\nOn Saturday, Emily told Naomi:\n\n\"On Thursday, Kevin told me this:\n\n'Yesterday, Ryan said to me,\n\"Tomorrow, I'll tell your older sister that the draft she sent me the day before yesterday was the same as the version I approved last Friday.\"\nBut don't tell her that yet. I haven't checked the draft myself.'\n\nThat's what Kevin told me.\"\n\nNaomi asked:\n\n\"So Ryan said on Thursday that he would contact your older sister?\"\n\nEmily replied:\n\n\"No. I think you've got that part wrong.\"\n\nAnswer the following questions based only on the passage.\n\nA. On what day of the week did Ryan make his statement to Kevin?\n\nB. What day of the week does \"tomorrow\" in Ryan's statement refer to?\n\nC. Who does \"your\" in \"your older sister\" refer to?\n\nD. Whose older sister does Ryan intend to contact?\n\nE. Who does \"she\" in \"the draft she sent me\" refer to?\n\nF. On what day of the week was that draft sent to Ryan?\n\nG. In Ryan's statement, does \"last Friday\" refer to the Friday immediately preceding the week in which Ryan was speaking, or to the Friday of that same week?\n\nH. Can it be determined from the passage whether Ryan actually contacted the older sister?\n\nOutput only the following JSON object:\n\n{\"A\":\"day\",\"B\":\"day\",\"C\":\"person\",\"D\":\"person\",\"E\":\"person\",\"F\":\"day\",\"G\":\"preceding Friday/same-week Friday\",\"H\":\"determinate/indeterminate\"}"
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Exactly two of the five devices A, B, C, D, and E have failed. Five technicians each made two statements.\n\nExactly three of the technicians are completely reliable, meaning that both of their statements are true. The remaining exactly two technicians are completely unreliable, meaning that both of their statements are false. No technician made one true statement and one false statement.\n\nTechnician 1:\nExactly one of A, C, and D has failed.\nExactly two of A, D, and E have failed.\n\nTechnician 2:\nB is functioning normally.\nA and E are in the same state.\n\nTechnician 3:\nExactly two of A, C, and D have failed.\nExactly one of A and D has failed.\n\nTechnician 4:\nExactly two of B, C, and D have failed.\nD has failed.\n\nTechnician 5:\nExactly one of C, D, and E has failed.\nExactly two of A, B, and D have failed.\n\nDetermine the failed devices and the completely unreliable technicians.\n\nOutput only a JSON object in the following format, with no explanation:\n\n{\"failed\":[\"...\",\"...\"],\"unreliable\":[integer,integer]}\n\nList the failed devices in alphabetical order and the technician numbers in ascending order."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

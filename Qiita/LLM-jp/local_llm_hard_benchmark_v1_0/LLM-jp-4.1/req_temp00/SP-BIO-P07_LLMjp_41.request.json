@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "An idealized renal physiology experiment is performed in a healthy adult. The following quantities are measured during a steady-state urine collection.\n\nUrine flow rate:\n\n$V = 1.00\\ \\mathrm{mL/min}$\n\nFor any substance X, clearance is defined as\n\n$C_X = U_X V/P_X$,\n\nwhere $U_X$ is the urine concentration and $P_X$ is the plasma concentration.\n\nThe measurements are:\n\n| Substance | Plasma concentration $P_X$ | Urine concentration $U_X$ |\n| --- | ---: | ---: |\n| Inulin | $0.25\\ \\mathrm{mg/mL}$ | $30.0\\ \\mathrm{mg/mL}$ |\n| PAH | $0.020\\ \\mathrm{mg/mL}$ | $10.8\\ \\mathrm{mg/mL}$ |\n| Glucose | $3.00\\ \\mathrm{mg/mL}$ | $60.0\\ \\mathrm{mg/mL}$ |\n\nAssume:\n\n- inulin is freely filtered and is neither reabsorbed nor secreted;\n- PAH is filtered and secreted, and its renal extraction ratio is $E_{\\mathrm{PAH}}=0.90$;\n- hematocrit is $0.40$;\n- glucose is freely filtered;\n- at the stated plasma glucose concentration, glucose reabsorption has reached its transport maximum;\n- ignore nephron heterogeneity and transport splay.\n\nAnswer all of the following.\n\n1. Calculate the glomerular filtration rate, GFR, from the inulin clearance.\n\n2. Calculate the effective renal plasma flow from PAH clearance. Then correct for the PAH extraction ratio to obtain the true renal plasma flow.\n\n3. Calculate renal blood flow from the true renal plasma flow and hematocrit.\n\n4. Calculate the filtration fraction using the true renal plasma flow.\n\n5. Calculate the filtered load, urinary excretion rate, and tubular reabsorption rate of glucose. From these values, determine the glucose transport maximum, $T_m$, under the assumptions of the problem.\n\n6. A drug reduces the glucose $T_m$ to $180\\ \\mathrm{mg/min}$ without changing GFR, plasma glucose concentration, or urine flow rate. Under the idealized no-splay assumption, calculate the new urinary glucose excretion rate and urine glucose concentration.\n\n7. Explain mechanistically why PAH clearance can substantially exceed GFR, whereas inulin clearance equals GFR. Also explain why PAH clearance must be corrected when the extraction ratio is less than 1.\n\nShow all calculations with units."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

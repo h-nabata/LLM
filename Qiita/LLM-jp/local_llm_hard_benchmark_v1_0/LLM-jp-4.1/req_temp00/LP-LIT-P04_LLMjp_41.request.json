@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Read the following record carefully.\n\nOn Monday afternoon, it was discovered that a sample stored in a laboratory had been moved to a different shelf.\n\nAt 2:10 p.m., Sarah told the laboratory manager:\n\n\"Shortly after 1:00 p.m., I saw Thomas coming out of the storage room.\"\n\nThomas replied:\n\n\"I was not in the storage room at any time after noon today.\"\n\nThe access-control system recorded the use of Thomas's access card at 1:07 p.m. However, the system records the use of a card, not the identity of the person who uses it.\n\nLater that afternoon, security footage from the hallway showed a person wearing the gray jacket Thomas normally wears walking near the storage room at approximately 1:08 p.m. The person's face was not visible.\n\nThe following day, Daniel stated:\n\n\"I had borrowed Thomas's gray jacket from around noon until about 2:00 p.m. yesterday.\"\n\nThomas also said:\n\n\"There was a period during lunch when I left my card case on my desk while I was away.\"\n\nSarah later clarified her original statement:\n\n\"I didn't actually see the person's face. I assumed it was Thomas because of the jacket.\"\n\nThere is no video showing anyone actually moving the sample, and the sample can only be established to have been moved sometime between 1:00 p.m. and 1:30 p.m.\n\nFor each statement below, classify it as T if it must be true from the record, F if it is contradicted by the record, or U if it cannot be determined from the record.\n\nA. Thomas's access card was used at 1:07 p.m.\n\nB. Thomas himself entered the storage room at 1:07 p.m.\n\nC. At approximately 1:08 p.m., a person wearing Thomas's gray jacket was near the storage room.\n\nD. The person shown in the footage at approximately 1:08 p.m. was Daniel.\n\nE. Sarah's original identification of the person as Thomas was based at least in part on the gray jacket.\n\nF. The access-control record alone proves that Thomas's statement that he was not in the storage room after noon was false.\n\nG. Daniel used Thomas's access card.\n\nH. Thomas moved the sample.\n\nI. Sarah's original identification and Thomas's statement cannot both be literally correct, but this alone does not establish that either person intentionally lied.\n\nOutput only the following JSON object:\n\n{\"A\":\"T/F/U\",\"B\":\"T/F/U\",\"C\":\"T/F/U\",\"D\":\"T/F/U\",\"E\":\"T/F/U\",\"F\":\"T/F/U\",\"G\":\"T/F/U\",\"H\":\"T/F/U\",\"I\":\"T/F/U\"}"
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

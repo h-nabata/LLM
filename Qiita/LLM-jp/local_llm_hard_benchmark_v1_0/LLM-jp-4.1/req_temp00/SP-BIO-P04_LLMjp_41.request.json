@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "A 420-amino-acid eukaryotic membrane protein is synthesized in the presence of sealed rough-ER microsomes.\n\nThe protein contains:\n\n- a cleavable N-terminal signal peptide at residues 1-25;\n- a hydrophobic segment H1 at residues 180-202;\n- a hydrophobic segment H2 at residues 300-322;\n- potential N-linked glycosylation sequons centered at residues 90, 250, and 350.\n\nFor this problem, assume that N-linked glycosylation occurs only when a sequon is exposed to the ER lumen during translocation, that the microsomal membrane is impermeable to externally added protease, and that protease completely digests any sufficiently exposed cytosolic polypeptide.\n\nThe following results are obtained.\n\nFor WT protein:\n\n- the N-terminal signal peptide is cleaved;\n- the sequons at residues 90 and 350 are glycosylated;\n- the sequon at residue 250 is not glycosylated;\n- treatment of intact microsomes with protease removes most of the segment between H1 and H2, but protected fragments containing residue 90 and residue 350 remain;\n- addition of detergent together with protease causes complete digestion.\n\nA second construct lacks H2 but is otherwise unchanged. In this construct:\n\n- residue 90 remains glycosylated;\n- residues 250 and 350 are not glycosylated;\n- essentially all residues C-terminal to H1 are protease-sensitive in intact microsomes.\n\nAnswer all of the following.\n\n1. Infer the membrane topology of WT protein after cleavage of the signal peptide. State whether each of the following regions is lumenal, transmembrane, or cytosolic: residues 26-179, H1, residues 203-299, H2, and residues 323-420.\n\n2. Identify which internal hydrophobic segment acts as a stop-transfer sequence and which acts as a start-transfer sequence. Explain how the glycosylation results support your assignment.\n\n3. Explain why the sequon at residue 250 is not glycosylated even though the protein enters the ER and contains an intact glycosylation consensus sequence.\n\n4. Predict the location of the C terminus and the glycosylation state of residue 350 when H2 is deleted. Explain why these predictions agree with the protease-protection result.\n\n5. How many membrane-spanning segments are present in the mature WT protein after signal-peptide cleavage? Explain why the cleaved N-terminal signal peptide should not be counted as a membrane-spanning segment of the mature protein.\n\nYour reasoning must use both the glycosylation data and the protease-protection data; an answer based only on hydrophobic-sequence positions is insufficient."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

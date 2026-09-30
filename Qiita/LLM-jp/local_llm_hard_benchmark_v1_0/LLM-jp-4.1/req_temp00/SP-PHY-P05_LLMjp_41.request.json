@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "A homogeneous conductor of conductivity $\\sigma$ and permeability $\\mu$ occupies the half-space $x>0$. The displacement current may be neglected relative to the conduction current.\n\nAt the surface $x=0$, an external magnetic field is applied such that\n\n$$\nH_z(0,t)=H_0\\cos\\omega t.\n$$\n\nAll physical quantities depend only on $x$, and the electromagnetic fields vanish as $x\\to\\infty$ inside the conductor.\n\nUse the complex time dependence $e^{i\\omega t}$.\n\n(1) Starting from Maxwell's equations and Ohm's law, derive the diffusion equation satisfied by $H_z(x,t)$ inside the conductor.\n\n(2) Define the skin depth $\\delta$, and determine the complex amplitude $\\widetilde H_z(x)$ of the magnetic field.\n\n(3) Determine the electric field $\\widetilde E_y(x)$ inside the conductor and the surface impedance\n\n$$\nZ_s=\\frac{\\widetilde E_y(0)}{\\widetilde H_z(0)}.\n$$\n\n(4) Determine the time-averaged Joule heating per unit volume and integrate it over the conductor to obtain the average absorbed power per unit surface area."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

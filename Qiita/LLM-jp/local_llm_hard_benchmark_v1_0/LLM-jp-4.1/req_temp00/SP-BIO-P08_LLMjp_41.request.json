@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Consider two neurons that differ only in their intracellular chloride concentration. Ignore bicarbonate permeability and treat all conductances as ohmic.\n\nAt $37^\\circ\\mathrm{C}$, use\n\n$E_{Cl}=-61.5\\log_{10}\\left(\\frac{[Cl^-]_{\\mathrm{out}}}{[Cl^-]_{\\mathrm{in}}}\\right)\\ \\mathrm{mV}$.\n\nThe extracellular chloride concentration is\n\n$[Cl^-]_{\\mathrm{out}}=120\\ \\mathrm{mM}$.\n\nThe two neurons are:\n\nNeuron I: $[Cl^-]_{\\mathrm{in}}=30\\ \\mathrm{mM}$.\n\nNeuron M: $[Cl^-]_{\\mathrm{in}}=6\\ \\mathrm{mM}$.\n\nAssume fixed potassium and sodium reversal potentials\n\n$E_K=-90\\ \\mathrm{mV}$\n\nand\n\n$E_{Na}=+60\\ \\mathrm{mV}$.\n\nBefore GABA is applied, the membrane conductances are\n\n$g_K=20\\ \\mathrm{nS}$,\n\n$g_{Na}=2\\ \\mathrm{nS}$,\n\nand\n\n$g_{Cl}=3\\ \\mathrm{nS}$.\n\nApproximate the steady membrane potential by\n\n$V_m=\\frac{g_KE_K+g_{Na}E_{Na}+g_{Cl}E_{Cl}}{g_K+g_{Na}+g_{Cl}}$.\n\nActivation of GABA_A receptors adds a chloride conductance of $20\\ \\mathrm{nS}$, so that total $g_{Cl}$ becomes $23\\ \\mathrm{nS}$. Assume an action-potential threshold of $-60\\ \\mathrm{mV}$.\n\nAnswer all of the following.\n\n1. Calculate $E_{Cl}$ for neuron I and neuron M.\n\n2. Calculate the resting $V_m$ of each neuron before GABA application.\n\n3. Calculate the new steady $V_m$ of each neuron during strong GABA_A-receptor activation.\n\n4. Under the assumptions of this model, determine whether GABA is depolarizing or hyperpolarizing in each neuron and whether GABA alone is predicted to move the membrane potential beyond the stated action-potential threshold.\n\n5. For each neuron, determine the net direction of chloride-ion movement immediately after GABA_A channels open at the pre-GABA resting potential. Explain your answer in terms of the relationship between $V_m$ and $E_{Cl}$.\n\n6. In many developing neurons, expression of chloride transporters changes so that intracellular chloride decreases with maturation. Explain how such a change can convert GABA_A-receptor signaling from depolarizing to hyperpolarizing without changing the ion selectivity of the GABA_A receptor itself.\n\n7. Suppose a mature neuron undergoes strong inhibition of a chloride-exporting transporter and its intracellular chloride concentration gradually approaches $30\\ \\mathrm{mM}$ while all other parameters remain unchanged. Predict the qualitative change in the effect of GABA and explain why this is a change in the chloride electrochemical gradient rather than a change in receptor identity.\n\nRound membrane potentials to approximately $0.1\\ \\mathrm{mV}$ where appropriate."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Consider the ideal-gas reaction\n\n$$\n\\mathrm{A(g) \\rightleftharpoons B(g)+C(g)}.\n$$\n\nAt $T_0=298.15\\ \\mathrm{K}$, the standard reaction quantities are\n\n$$\n\\Delta_r H^\\circ(T_0)=15.00\\ \\mathrm{kJ\\,mol^{-1}},\n\\qquad\n\\Delta_r S^\\circ(T_0)=50.00\\ \\mathrm{J\\,mol^{-1}\\,K^{-1}}.\n$$\n\nThe standard isobaric heat-capacity change is independent of temperature over $200\\le T\\le1000\\ \\mathrm{K}$:\n\n$$\n\\Delta_r C_p^\\circ=-80.00\\ \\mathrm{J\\,mol^{-1}\\,K^{-1}}.\n$$\n\nTake the standard pressure as $p^\\circ=1.000\\ \\mathrm{bar}$, and use\n\n$$\nR=8.3144626\\ \\mathrm{J\\,mol^{-1}\\,K^{-1}}.\n$$\n\nAssume ideal-gas behavior and no phase transition.\n\n(1) Starting from Kirchhoff's law and the thermodynamic relation for entropy, derive explicit expressions for $\\Delta_r H^\\circ(T)$, $\\Delta_r S^\\circ(T)$, $\\Delta_r G^\\circ(T)$, and the dimensionless equilibrium constant $K_p(T)$.\n\n(2) Determine all temperatures in the interval $200\\le T\\le1000\\ \\mathrm{K}$ for which $K_p(T)=1$. Give each temperature to $0.1\\ \\mathrm{K}$. Explain why more than one such temperature can occur even though the sign of $\\Delta_r H^\\circ(298.15\\ \\mathrm{K})$ is fixed.\n\n(3) Calculate $K_p$ at $T=500.0\\ \\mathrm{K}$ to three significant figures.\n\n(4) At $500.0\\ \\mathrm{K}$, a mixture initially contains $1.000\\ \\mathrm{mol}$ of A and $1.000\\ \\mathrm{mol}$ of an inert gas, with no B or C. The system is maintained at a constant total pressure of $5.000\\ \\mathrm{bar}$. Let the equilibrium extent of reaction be $\\xi_P$. Derive the equation satisfied by $\\xi_P$ and determine its physically admissible value.\n\n(5) A second system has the same initial amounts and the same temperature, but is placed in a rigid vessel whose volume is chosen so that the initial total pressure is also $5.000\\ \\mathrm{bar}$. Let its equilibrium extent be $\\xi_V$. Derive the corresponding equilibrium equation and determine $\\xi_V$.\n\n(6) Compare $\\xi_P$ and $\\xi_V$, and explain the difference using both Le Chatelier's principle and the explicit form of the reaction quotient. A numerical answer without the derivations is not sufficient."
+    }
+  ],
+  "reasoning_effort": "medium",
+  "thinking_budget_tokens": 24000,
+  "temperature": 0.0,
+  "max_tokens": 30000,
+  "seed": 42,
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  }
+}
